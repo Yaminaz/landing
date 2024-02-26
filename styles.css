@@ -5,37 +5,23 @@
 }
 
 body {
-  background-color: #e7dcd3;
-}
-
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 20px;
-}
-
-header {
-  background-color: #e7dcd3;
-  padding: 30px;
-  text-align: center;
-}
-
-h1 {
-  font-size: 48px;
-  padding: 20px;
-  color: #4a4a4a;
-  background-color: #fff;
+  background-color: #ddc3ad;
 }
 
 h2 {
-  font-size: 32px;
-  margin-top: 5vh;
-  text-align: center;
+  font-size: 40px;
+  margin: 0;
+  padding: 0;
   color: #4a4a4a;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
 }
 
 .maroc {
-  background-image: url("https://source.unsplash.com/random/1600x900/?morocco");
+  background-image: url("https://images.unsplash.com/photo-1535191059345-c16453b851b2?q=80&w=3131&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
   background-size: cover;
   background-position: center;
   height: 600px;
@@ -45,11 +31,22 @@ h2 {
   text-align: center;
   color: #fff;
   font-size: 48px;
+  margin-bottom: 75px;
 }
 
 .content {
   background-color: #fff;
   margin-top: 5vh;
+  padding: 20px;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+}
+
+.content h2 {
+  font-size: 32px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20px;
 }
 
 .content p {
@@ -60,18 +57,123 @@ h2 {
 }
 
 footer {
-  background-color: #4a4a4a;
+  background-color: #333;
   color: #fff;
-  text-align: center;
   padding: 20px;
-  margin-top: 5vh;
+  text-align: center;
+}
+
+.social-media {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.social-media a {
+  margin-top: 20px;
+  display: grid;
+  justify-content: center;
+  place-items: center;
+  width: 50px;
+  height: 50px;
+  line-height: 40px;
+  color: #333;
+  text-align: center;
+  text-decoration: none;
+}
+
+.social-media a img {
+  width: 100%;
+  height: auto;
+}
+
+.social-media a:hover {
+  background-color: #333;
+  color: #fff;
 }
 
 a {
-  color: cyan;
+  color: white;
   text-decoration: none;
 }
 
 a:hover {
   text-decoration: underline;
+}
+
+.image-gallery {
+  display: grid;
+  grid-template-rows: repeat(auto-fill, minmax(200px, 1fr));
+  grid-gap: 100px;
+  margin-bottom: 100px;
+}
+
+.image-container {
+  position: relative;
+}
+
+.learn-more {
+  position: absolute;
+  font-size: 30px;
+  bottom: 10px;
+  right: 10px;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  display: none;
+  background-color: #444;
+  box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.image-container:hover .learn-more {
+  display: block;
+  
+}
+
+.image-container img {
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: transform .2s ease-in-out;
+}
+
+.image-container:hover img {
+  transform: scale(1.1);
+}
+.learn-more:hover {
+  padding: 10px 20px;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.navbar {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar li {
+  margin: 0 10px;
+}
+
+.navbar a {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 25px;
+}
+
+.navbar a:hover {
+  color: #ccc;
+  background-color: #636363;
 }
