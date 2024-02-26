@@ -1,0 +1,77 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Playfair Display", serif;
+}
+
+body {
+  background-color: #e7dcd3;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+header {
+  background-color: #e7dcd3;
+  padding: 30px;
+  text-align: center;
+}
+
+h1 {
+  font-size: 48px;
+  padding: 20px;
+  color: #4a4a4a;
+  background-color: #fff;
+}
+
+h2 {
+  font-size: 32px;
+  margin-top: 5vh;
+  text-align: center;
+  color: #4a4a4a;
+}
+
+.maroc {
+  background-image: url("https://source.unsplash.com/random/1600x900/?morocco");
+  background-size: cover;
+  background-position: center;
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+  font-size: 48px;
+}
+
+.content {
+  background-color: #fff;
+  margin-top: 5vh;
+}
+
+.content p {
+  font-size: 18px;
+  line-height: 1.5;
+  color: #4a4a4a;
+  margin-bottom: 20px;
+}
+
+footer {
+  background-color: #4a4a4a;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  margin-top: 5vh;
+}
+
+a {
+  color: cyan;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
